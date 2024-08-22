@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+        background-image: url('/images/bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    @media only screen and (max-width: 767px) {
+        body {
+            background-image: url('/images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+      @keyframes zoomIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .animate-zoomIn {
+            animation: zoomIn 0.9s ease-in-out forwards;
+        }
+        .hover-animate:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease-in-out;
+        }
+
+      .font-style {
+          font-family: "Matemasie", sans-serif;
+          font-weight: 500;
+          font-style: normal;
+        }
+    </style>
+  </head>
+  <body>
+    <h2
+      class="sm:text-5xl text-5xl font-large text-center text-white mt-20 mb-4 font-style ">
+      OUR MENU
+    </h2>
+    <section class="text-white font-bold body-font border-r-8">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block "
+                src="./images/1.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Chicken Shawarma
+              </h2>
+              <p class="mt-1 text-white">Rs: 300</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/2.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Kids Shawarma
+              </h2>
+              <p class="mt-1">Rs: 250</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/3.jpeg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Chicken Vegetable Shawarma
+              </h2>
+              <p class="mt-1">Rs: 300</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/4.jpeg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Double Chicken Shawarma
+              </h2>
+              <p class="mt-1">Rs: 400</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/5.jpeg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Without Cheese Shawarma
+              </h2>
+              <p class="mt-1">Rs: 300</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/6.jpeg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Chicken Cheese Shawarma
+              </h2>
+              <p class="mt-1">Rs: 350</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/7.jpeg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                Chicken Fries Shawarma
+              </h2>
+              <p class="mt-1">Rs: 350</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded-2xl overflow-hidden hover:shadow-xl hover-animate animate-zoomIn">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="./images/8.jpeg"
+              />
+            </a>
+            <div class="mt-4">
+              <h2 class="text-white title-font text-lg font-medium">
+                French Fries
+              </h2>
+              <p class="mt-1">Rs: 50 --</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-4">
+      <div
+        class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+      >
+        <p class="text-white-500 text-sm text-center sm:text-left">
+          © 2024 Arabian Nights Shawarma —
+          <a
+            href="https://twitter.com/knyttneve"
+            rel="noopener noreferrer"
+            class="text-red-600 ml-1"
+            target="_blank"
+            >@arabian_nights_7</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+        >
+          <a
+            href="https://www.facebook.com/profile.php?id=61555891662832"
+            class="text-white-500"
+            target="_blank"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5 hover:text-blue-500"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.youtube.com/@arabian_nights_7"
+            class="ml-3 text-white-500"
+            target="_blank"
+          >
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5 hover:text-red-600"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23.498 6.186c-.275-1.04-1.08-1.864-2.107-2.158C19.335 3.5 12 3.5 12 3.5s-7.335 0-9.391.528c-1.027.294-1.832 1.118-2.107 2.158C.001 8.242 0 12 0 12s.001 3.758.502 5.814c.275 1.04 1.08 1.864 2.107 2.158C4.665 20.5 12 20.5 12 20.5s7.335 0 9.391-.528c1.027-.294 1.832-1.118 2.107-2.158.502-2.056.502-5.814.502-5.814s-.001-3.758-.502-5.814zM9.755 15.255V8.745l6.049 3.255-6.049 3.255z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/arabian_nights_7/"
+            class="ml-3 text-white-500"
+            target="_blank"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5 hover:text-pink-800"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

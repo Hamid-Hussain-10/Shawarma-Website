@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawarma Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/Favicon.ico.png" type="image/x-icon">
+    <style>
+
+   .back{
+        background-image: url('/images/a.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .animate-zoomIn {
+            animation: zoomIn 0.8s ease-in-out forwards;
+        }
+        .hover-animate:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .font-style {
+          font-family: "Matemasie", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        @media only screen and (max-width: 767px) {
+        .logo {
+            display: none;
+        }
+        .list li a{
+          margin: 0px auto;
+        }
+      }
+    </style>
+
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white fixed w-full z-10 top-0 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="Shawarma Shop Logo" class="h-17 w-16 mr-5">
+                <div class=" logo font-bold font-style">Arabian Nights Shawarma</div>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 font-style list">
+                    <li><a href="#" class="hover:text-red-400 transition duration-300 mx-5">Home</a></li>
+                    <li><a href="./menu.html" class="hover:text-green-400 transition duration-300 mx-5">Menu</a></li>
+                    <li><a href="./about.html" class="hover:text-blue-400 transition duration-300 mx-5">About</a></li>
+                    <li><a href="./contact.html" class="hover:text-pink-400 transition duration-300 mx-5">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('./images/5.jpeg'); margin-top: 80px;">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h1 class="text-5xl font-bold mb-4">Welcome to Arabian Nights Shawarma</h1>
+                <p class="text-xl mb-6">The best shawarma in town, just for you.</p>
+                <a href="./menu.html" class="bg-gray-900 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-2xl transition duration-300 transform hover:scale-105">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-gray-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 font-style">Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover-animate">
+                    <img src="./images/1.jpg" alt="Chicken Shawarma" class="rounded-2xl mb-4 animate-zoomIn">
+                    <h3 class="text-xl font-bold mb-2">Chicken Shawarma</h3>
+                    <p class="text-gray-700 mb-4">Juicy marinated chicken served with fresh veggies and tahini sauce.</p>
+                    <p class="font-bold">Rs: 300</p>
+                </div>
+                <div class="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover-animate">
+                    <img src="./images/2.jpg" alt="Beef Shawarma" class="rounded-2xl mb-4 animate-zoomIn">
+                    <h3 class="text-xl font-bold mb-2">Kids Shawarma</h3>
+                    <p class="text-gray-700 mb-4">Tender kids Shawarma strips with hummus and garlic sauce.</p>
+                    <p class="font-bold">Rs: 250</p>
+                </div>
+                <div class="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover-animate">
+                    <img src="./images/3.jpeg" alt="Falafel Wrap" class="rounded-2xl mb-4 animate-zoomIn">
+                    <h3 class="text-xl font-bold mb-2">Chicken Vegetable Shawarma</h3>
+                    <p class="text-gray-700 mb-4">Crispy falafel balls with fresh salad and tahini.</p>
+                    <p class="font-bold">Rs: 300</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-10 bg-gray-700">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 font-style">About Us</h2>
+            <p class="text-black text-2xl">Arabian Nights Shawarma has been serving delicious shawarma and Middle Eastern delicacies for over a decade. Our commitment to quality and taste has made us a favorite among locals and visitors alike. Come and experience the flavors of the Middle East in every bite.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 back">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 font-style">Contact Us</h2>
+            <p class="text-gray-700 mb-4"></p>
+            <p class="text-gray-700 mb-4">Phone: 03464509650</p>
+            <p class="text-gray-700 mb-4">Phone: 03472534162</p>
+            <p class="text-gray-700 mb-4">Email: yawar554718903@gmail.com</p>
+            <div class="mt-8">
+                <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition duration-300 transform hover:scale-105">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+      <div
+        class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+      >
+        <p class="text-white-500 text-sm text-center sm:text-left">
+          © 2024 Arabian Nights Shawarma —
+          <a
+            href="https://twitter.com/knyttneve"
+            rel="noopener noreferrer"
+            class="text-red-600 ml-1"
+            target="_blank"
+            >@arabian_nights_7</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+        >
+          <a
+            href="https://www.facebook.com/profile.php?id=61555891662832"
+            class="text-white-500"
+            target="_blank"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5 hover:text-blue-500"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.youtube.com/@arabian_nights_7"
+            class="ml-3 text-white-500"
+            target="_blank"
+          >
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5 hover:text-red-600"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23.498 6.186c-.275-1.04-1.08-1.864-2.107-2.158C19.335 3.5 12 3.5 12 3.5s-7.335 0-9.391.528c-1.027.294-1.832 1.118-2.107 2.158C.001 8.242 0 12 0 12s.001 3.758.502 5.814c.275 1.04 1.08 1.864 2.107 2.158C4.665 20.5 12 20.5 12 20.5s7.335 0 9.391-.528c1.027-.294 1.832-1.118 2.107-2.158.502-2.056.502-5.814.502-5.814s-.001-3.758-.502-5.814zM9.755 15.255V8.745l6.049 3.255-6.049 3.255z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/arabian_nights_7/"
+            class="ml-3 text-white-500"
+            target="_blank"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5 hover:text-pink-800"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
